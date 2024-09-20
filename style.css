@@ -109,13 +109,24 @@ a{
     width: 100%;
     height: 90vh;
     display: flex;
+    
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
 }
+.informacion{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 .home-info{
     
-    width: 500px;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -124,40 +135,62 @@ a{
     font-size: 20px; 
 }
 .home-p{
-    font-size: 18px;
-    width: 80%;
-    margin-right: 125px;
+    
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    align-items: start;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+   
 }
 .home-bio{
-    margin-top: 5px;
-    margin-left: 55px;
-    width: 60%;
+    margin-top: 15px;
+    width: 100%;
     font-size: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    text-align: left;
-}
-.home-h2{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     
 }
+
+
 .home-h2-2{
-    width: 80%;
-    margin-right: 42px;
+    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding-right: 30px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
+.home-h2-3{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.home_button{
+    
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 15px;
+}
+
 
 .cv-logo{
      cursor: pointer;
@@ -170,8 +203,6 @@ a{
     background-color: white;
     border: 1px solid orangered;
     transition: 0.5s;
-    margin-top: 10px;
-    margin-right: 100px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -338,12 +369,13 @@ align-items: center;
    }
    @media(max-width:1000px){
     .projects-container{
-        height: 1200px;
-
+        height: auto;
+        padding: 0;
     }
     .divider{
         width: 100%;
     }
+    
    }
    
    
@@ -410,6 +442,7 @@ align-items: center;
    }
    .boton1{
     display: flex;
+    margin: 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -425,7 +458,7 @@ align-items: center;
    }
    .boton1 svg 
     { 
-        margin-left: 5px;
+        margin: 5px;
     }
     .boton svg 
     { 
@@ -457,6 +490,8 @@ align-items: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: auto;
     border-top: 1px solid rgb(255, 255, 255);
@@ -464,7 +499,8 @@ align-items: center;
    }
    .contact-card
    {
-    margin: 30px 30px 30px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 150px;
     width: 90%;
     border: px solid rgb(255, 255, 255);
@@ -480,7 +516,7 @@ align-items: center;
     border: px solid red;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100px;
     width: 90%;
     margin-top: 10px;
@@ -596,18 +632,24 @@ align-items: center;
         height: auto;
         
     }
+    
+    
     .contact-card{
         height: 270px;
         border: px solid red;
-        padding: 0px 0px 0px 0px;
+        
         
         
     }
     .contact-space{
+        display: flex;
+        justify-content: center;
         flex-direction: column;
+        width: 100%;
         height: 300px;
         border: px solid red;
-        padding: 0px 0px 0px 0px;
+        padding: 0px;
+        margin: 0;
         
     }
     .contact-space button{
@@ -648,6 +690,10 @@ align-items: center;
     
    }
    
+   
+
+   
+   
    @media(max-width:400px){
         .card2{
             height: auto;
@@ -662,7 +708,23 @@ align-items: center;
            margin-bottom: 5px;
         }
         .contact-space button{
-            width: auto;
+          width: 200px;
         }
+      .divider{
+        padding: 0;
+        margin: 0;
+      }
+      .foto{
+        height: 150px;
+
+      }
+      .skills-top{
+        align-items: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      
+    
    }
 
